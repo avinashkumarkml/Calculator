@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .maindiv {
+        height: 500px;
+        width: 400px;
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-top: 5%;
+      }
+      .div {
+        height: 70px;
+        width: 383px;
+        /* border: 1px solid black; */
+        font-size: 70px;
+        padding: 5px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+
+      button:last-child {
+        width: 63%;
+      }
+      .div1 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+        /* border: 1px solid red; */
+      }
+      button {
+        width: 30%;
+        margin: 6px;
+      }
+      button {
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maindiv">
+      <p class="div"></p>
+
+      <div class="div1">
+        <button onclick="one()">1</button>
+        <button onclick="two()">2</button>
+        <button onclick="three()">3</button>
+        <button onclick="four()">4</button>
+        <button onclick="five()">5</button>
+        <button onclick="six()">6</button>
+        <button onclick="seven()">7</button>
+        <button onclick="eight()">8</button>
+        <button onclick="nine()">9</button>
+        <button onclick="zero()">0</button>
+        <button onclick="blank()">Clear</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  function one() {
+    document.querySelector("p").textContent = 1;
+  }
+  function two() {
+    document.querySelector("p").textContent = 2;
+  }
+  function three() {
+    document.querySelector("p").textContent += 3;
+  }
+  function four() {
+    document.querySelector("p").textContent += 4;
+  }
+  function five() {
+    document.querySelector("p").textContent += 5;
+  }
+  function six() {
+    document.querySelector("p").textContent += 6;
+  }
+  function seven() {
+    document.querySelector("p").textContent += 7;
+  }
+  function eight() {
+    document.querySelector("p").textContent += 8;
+  }
+  function nine() {
+    document.querySelector("p").textContent += 9;
+  }
+  function zero() {
+    document.querySelector("p").textContent += 0;
+  }
+  function blank() {
+    document.querySelector("p").textContent = null;
+  }
+
+</script>
